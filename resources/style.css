@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16x;
+}
+p {
+    font-weight: 300;
+    color: #111111;
+}
+.center-align{
+    text-align: center;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.btn{
+    background-color: #ff0157;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 3px;
+}
+/* ----- Header ------ */
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 100px;
+    align-items: center;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header .logo {
+    font-weight: 700;
+    font-size: 2em;
+}
+header .logo span{
+    color: #ff0157;
+    width: 5px;
+    height: 5px;
+}
+header .navigation {
+    list-style-type: none;
+    display: flex;
+    font-weight: 300;
+}
+header .navigation li + li {
+    margin-left: 20px;
+}
+header .navigation li a{
+    transition: border-bottom 0.5s;
+}
+header .navigation li a:hover,header .navigation li a:active{
+    border-bottom: 2px solid #ff0157;
+}
+/* ---- Banner ------ */
+.banner{
+    background-image: url(/resources/css/images/bg.jpg);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.banner-content h2{
+    color: white;
+    font-size: 5em;
+}
+.banner-content p {
+    color: #ffffff;
+}
+.banner-content .btn{
+    padding: 10px 25px;
+    margin-top: 20px;
+
+}
