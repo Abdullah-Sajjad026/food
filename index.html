@@ -13,6 +13,7 @@
 <body>
     <header>
         <a href="#" class="logo">FOOD<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu()"></div>
         <ul class="navigation">
             <li> <a href="#banner" visited>Home</a></li>
             <li> <a href="#about">About</a></li>
@@ -28,7 +29,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem impedit quasi enim quae,
                 voluptates aut? Iure quasi, deleniti aliquam illum odio nostrum libero, exercitationem ipsum mollitia
                 error quam esse velit!</p>
-            <a href="#" class="btn">Our Menu</a>
+            <a href="#menu" class="btn">Our Menu</a>
         </div>
     </section>
     <!-- ------- About ---------- -->
@@ -162,15 +163,97 @@
             </div>
         </div>
     </section>
-<!-- ----------- Testimonials ---------- -->
-<section class="testimonials" id="testimonials">
-    <div class="container">
-        <div class="titleBx center-align">
-            <h3>They <span class="big-letter">S</span>aid About Us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <!-- ----------- Testimonials ---------- -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="titleBx center-align">
+                <h3>They <span class="big-letter">S</span>aid About Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="D-flex content">
+                <div class="review-card">
+                    <div class="profile">
+                        <img src="/resources/css/images/testi1.jpg" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nulla. Vel veritatis est
+                            aspernatur quisquam iste, voluptatum consequatur sapiente odit! Laborum molestiae
+                            laudantium!</p>
+                    </div>
+                    <div class="name">
+                        <h3>Someone Famouse</h3>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="profile">
+                        <img src="/resources/css/images/testi2.jpg" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nulla. Vel veritatis est
+                            aspernatur quisquam iste, voluptatum consequatur sapiente odit! Laborum molestiae
+                            laudantium!</p>
+                    </div>
+                    <div class="name">
+                        <h3>Someone Famouse</h3>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="profile">
+                        <img src="/resources/css/images/testi3.jpg" alt="">
+                    </div>
+                    <div class="review">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit, nulla. Vel veritatis est
+                            aspernatur quisquam iste, voluptatum consequatur sapiente odit! Laborum molestiae
+                            laudantium!</p>
+                    </div>
+                    <div class="name">
+                        <h3>Someone Famouse</h3>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    <!-- ----------- Contact Section ----------- -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="titleBx center-align">
+                <h3><span class="big-letter">C</span>ontact Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send Message</h3>
+                <div class="inputBx">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="inputBx"> 
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="inputBx">
+                    <textarea placeholder="Your Message"></textarea>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Send">
+                </div>
+            </div>
+        </div>
+    </section>
+<div class="copyright-text">
+    <p>CopyRight <a href="https://github.com/Abdullah-webdev/" target="blank">Abdullah Sajjad</a> All Rights reserved</p>
+</div>
+
+    <script type="text/javascript">
+    window.addEventListener('scroll' , function(){
+        const header = document.querySelector('header');
+        header.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    function toggleMenu(){
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        menuToggle.classList.toggle('active');
+        navigation.classList.toggle('active');
+    }
+    </script>
 </body>
 
 </html>
