@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/resources/css/style.css">
+
+    <script src="jquery-2.1.4.js"></script>
     <!-- ------- favicon -------- -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicon/apple-touch-icon.png">
@@ -25,7 +27,14 @@
 
 <body>
 <!-- loader -->
+<<<<<<< HEAD
 
+=======
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+  </div>
+  <!-- ------------------------ -->
+>>>>>>> 608ab4753485280add38581e0ab9b6b47796f873
     <header>
         <a href="#" class="logo">FOOD<span>.</span></a>
         <div class="menuToggle" onclick="toggleMenu()"></div>
@@ -256,6 +265,14 @@
         <p>CopyRight <a href="https://github.com/Abdullah-webdev/" target="blank">Abdullah Sajjad</a> All Rights
             reserved</p>
     </div>
+<<<<<<< HEAD
+=======
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
+    </script>
+>>>>>>> 608ab4753485280add38581e0ab9b6b47796f873
     <script type="text/javascript">
         window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
